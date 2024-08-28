@@ -1,0 +1,15 @@
+.footer{
+    width: 90vw;
+    height: 6rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+.footer-m{
+    margin:2rem;
+    display: flex;
+    justify-content: space-between;
+
+}
+.terms{
+    margin-right: 2rem;
+}
