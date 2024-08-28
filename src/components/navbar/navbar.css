@@ -1,0 +1,50 @@
+.navbar{
+    box-sizing: border-box;
+    overflow: hidden;
+    height:5rem;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    padding: 2rem,2rem;
+    background: #000;
+
+}
+.navitems{
+    display: flex;
+}
+.navitems >li{
+    list-style: none;
+    margin: 1rem;
+}
+.navitems >li:hover{
+    color: yellow;
+    border-bottom: 2px solid yellow;
+
+}
+.logo{
+    object-fit: cover;
+    margin: 3rem;
+    height:4rem;
+    width: 4rem;
+
+}
+
+.navbtn{
+    margin: 3rem;
+    border: none;
+    padding: 1rem;
+    background: white;
+    color: #000;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    
+
+}
+.navbtn:hover{
+    background: rgb(233,217,22);
+    font-weight: bold;
+}
