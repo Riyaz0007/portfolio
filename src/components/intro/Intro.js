@@ -1,6 +1,5 @@
-import riyaz from '../assest/riyaz-image.jpg';
+import riyaz from '../assest/my-image.jpg';
 import './intro.css';
-import resume from '../assest/profile.pdf';
 import { Link } from 'react-scroll';
 const Intro = () => {
     return (
@@ -20,7 +19,6 @@ const Intro = () => {
                 <button className='contact-btn'><Link to="contact" smooth={true} duration={500} offset={-80}>
                     Contact Me
                 </Link></button>
-                <button className='resume-btn'><a href={resume} download='riyaz_profile--1.pdf' className='cv-link'>My resume</a></button>
                 </div>
             </section>
         </>

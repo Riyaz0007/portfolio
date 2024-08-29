@@ -1,38 +1,63 @@
-import React from "react";
-import Frontend from '../assest/fron.png';
-import Backend from '../assest/backend.jpg';
+import React, { useState } from "react";
+import ArrowForwardSharpIcon from '@mui/icons-material/ArrowForwardSharp';
+import BorderAllSharpIcon from '@mui/icons-material/BorderAllSharp';
+import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+import Dialog from '@mui/material/Dialog';  // Import Dialog from Material-UI
 import './services.css';
+
 const Services = () => {
+    const [open, setOpen] = useState(false);
+
+    const handleClickOpen = () => {
+        setOpen(true);
+    };
+
+    const handleClose = () => {
+        setOpen(false);
+    };
+
     return (
         <>
             <section>
                 <h1 className="services-h">My Services</h1>
                 <div className="seervices-m">
                     <div className="services-1">
-                        <div className="images">
-                        <img src={Frontend} alt="frontend" className="common-img" />
+                        <div>
+                            <BorderAllSharpIcon />
                         </div>
-                        <div className="internal-div">
-                        <h1 className="service-heading">frontend devolopment</h1>
-                        <p className="service-desc">I provide expert front-end development services, creating responsive, user-friendly interfaces with a focus on UI/UX design, performance optimization, and cross-browser compatibility to enhance your digital presence.</p>
+                        <h3 className="services-inside-h">Frontend Development</h3>
+                        <p className="service-desc">
+                            I provide front-end development services focused on creating responsive, high-performance web applications using React to deliver exceptional user experiences on all devices.
+                        </p>
+                        <div className="view-div" onClick={handleClickOpen}>
+                            <p className="view">View more</p>
+                            <div className="arrow">
+                                <ArrowForwardSharpIcon fontSize="small" />
+                            </div>
                         </div>
-
                     </div>
-                    <div className="services-2">
-                        <div className="images">
-                        <img src={Backend} alt="backend" className="common-img" />
-                        </div>
-                        <div className="internal-div">
-                        <h1 className="service-heading">backend devolopment</h1>
-                        <p className="service-desc">We offer robust backend development services, ensuring secure, scalable, and efficient server-side solutions with expertise in database management, API integration, and custom server architecture for seamless application performance.</p>
-                        </div>
-
-
-                    </div>
-
                 </div>
+
+                <Dialog open={open} onClose={handleClose}>
+                    <div className="modal-content">
+                        <div className="modal-point">
+                            <CheckCircleIcon fontSize="small" />
+                            <p className="modal-content-desc">Ensuring all web applications are fully responsive, providing a seamless and consistent experience across all devices, from desktops to mobile phones.</p>
+                        </div>
+                        <div className="modal-point">
+                            <CheckCircleIcon fontSize="small" />
+                            <p className="modal-content-desc">Developing front-end applications with SEO best practices in mind, ensuring that content is easily discoverable by search engines and achieving higher visibility in search results.</p>
+                        </div>
+                        <div className="modal-point">
+                            <CheckCircleIcon fontSize="small" />
+                            <p className="modal-content-desc">Focusing on building scalable front-end solutions that can handle growth and increased traffic, ensuring the application's performance remains optimal as your business expands.</p>
+                        </div>
+                        <button className='modal-btn'onClick={handleClose}>Close</button>
+                    </div>
+                </Dialog>
             </section>
         </>
-    )
-}
+    );
+};
+
 export default Services;

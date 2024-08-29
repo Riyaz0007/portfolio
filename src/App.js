@@ -1,10 +1,11 @@
 import React from 'react';
 import Navbar from './components/navbar/Navbar';
+import Skills from './components/skills/Skills';
 import Intro from './components/intro/Intro';
-import Skill from './components/skill/Skill';
 import Services from './components/services/Services';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
+import About from './components/about/About';
 
 function App() {
   return (
@@ -13,18 +14,19 @@ function App() {
       <div id="intro">
         <Intro/>
       </div>
-      <div id="skill">
-        <Skill/>
+      <div id="about">
+        <About/>
+      </div>
+      <div id="skills">
+        <Skills/>
       </div>
       <div id="services">
         <Services/>
       </div>
-      <div id="portfolio">
-        {/* Assuming you have a Portfolio component */}
-      </div>
       <div id="contact">
         <Contact/>
       </div>
+      
       <Footer/>
     </div>
   );

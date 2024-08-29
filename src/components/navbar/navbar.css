@@ -11,12 +11,18 @@
     top: 0;
     z-index: 3;
     padding: 1rem 2rem; /* Adjust padding to be more responsive */
-    background: #000;
+    background:hsl(0, 0%,98%);
+}
+.navbar.scrolled{
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
+
+
 }
 
 .nav-heading {
     font-size: 1.2rem;
-    color: #fff;
+    font-weight: 500;
+    color:hsl(0, 0%,20%);
 }
 
 .navitems {
@@ -26,17 +32,19 @@
 
 .navitems > li {
     list-style: none;
-    margin: 0 1rem; /* Reduced margin for better spacing on smaller screens */
+    margin: 0 1rem; 
 }
 
 .navitems > li a {
-    color: #fff;
+    color: hsl(0, 0%,20%);
+    font-size: 0.9rem;
+    font-weight: 500;
     text-decoration: none;
 }
 
 .navitems > li a:hover {
-    color: yellow;
-    border-bottom: 2px solid yellow;
+    color: hsl(0, 0%,20%);
+    border-bottom: 2px solid  hsl(0, 0%,20%);
 }
 
 .logo {

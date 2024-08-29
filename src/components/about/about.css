@@ -1,69 +1,89 @@
 .skill {
-    width: 100vw;
-    margin-top: 2rem;
+    width: 80vw;
+    margin-top: 1rem;
+    margin-left: 9rem;
     padding: 0 2rem; /* Added padding for smaller screens */
 }
 
 .heading {
+    color: hsl(0, 0%,20%);
     font-size: 3rem;
     text-align: center;
 }
 
 .desc {
-    text-align: justify;
+    text-align: left;
+    padding-top: 0.25rem;
     font-size: 1.2rem;
-    margin: 2rem 5rem;
     line-height: 2rem;
 }
 
 .left-section {
-    width: 30vw;
+    width: 45vw;
+    padding-bottom: 0.5rem;
 }
 
 .left-section > img {
-    width: 80%;
-    height: 80vh;
-    border: 1px solid white;
+    width:350px ;
     margin-left: 5rem;
-    border-radius: 10px;
+    border-radius: 1.5rem;
+    justify-self: center;
 }
 
 .right-section {
-    width: 70vw;
+    width: 55vw;
 }
 
 .main {
+    margin-top: 2rem;
     display: flex;
     justify-content: center;
 }
 
-.about-skill {
-    display: flex;
-    flex-direction: column;
-    margin-left: 5rem;
-    margin-top: 2rem;
-    margin-right: 2rem;
-}
+.about-internal{
+    background-color: #fff;
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
 
-.skills-list {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
+    height:11rem;
+    width:8rem;
+    margin:1rem;
+    border-radius: 0.5rem;
 }
+.about-section{
+    display: flex;
+}
+.about-title{
+    font-weight: 500;
+    color: hsl(0, 0%,20%);
+    font-size: 0.9rem;
+    text-align: center;
+    padding-top: 0.2rem;
 
-.skills-list hr {
-    outline: none;
+}
+.about-desc{
+    padding: 0.05rem;
+    text-align:center;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+}
+.resume-btn{
     border: none;
-    width: 50%;
-    height: 8px;
-    border-radius: 50px;
-    background: linear-gradient(264deg, #DF8908 -5.09%, #B415FF 106.28%);
+    background-color: hsl(0, 0%,20%);
+    color: #fff;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 5px;
+    margin-top: 2rem;
+}
+.cv-link {
+    text-decoration: none;
+    color: #fff;
 }
 
-.skills-list:hover {
-    transform: scale(1.05);
-    transition: 0.3s;
-}
+
+
 
 /* Media queries for responsiveness */
 @media (max-width: 1200px) {

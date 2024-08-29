@@ -21,35 +21,41 @@
     margin-right: 10rem;
 }
 .contact-head{
-    font-weight: bold;
-    font-size: 4rem;
+   color:hsl(0, 0%,20%);
+    font-size: 2.25rem;
     text-align: center;
 }
 .inner-head{
-    font-weight: bold;
-    font-size: 2.5rem;
+    color:hsl(0, 0%,20%);
+    font-size: 2.25rem;
     text-align: center;
 }
 .para{
     margin: 1.5rem 0;
     text-align: left;
 }
-.email-div{
-    margin: 1rem 0;
-   
+.emailp-div{
+    display: flex;
     
 }
 .phone-div{
     display: flex;
     margin: 1rem 0;
 
+
+}
+.location-div{
+    display: flex;
 }
 
 .details{
     font-size: 1rem;
-    padding-left: 1rem;
-    padding-top: 0.5rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
 
+}
+.icon-div{
+    margin-top: 0.6rem;
 }
 .address{
     margin-bottom: 1.5rem;
@@ -59,26 +65,19 @@
     width: 100%;
     padding: 18px 0 18px 20px;
     border-radius: 4px;
-    background: #32323c;
-    color: #a0a0a0;
+    border: 1px solid grey;
     font-family: Outfit;
     font-size: 18px;
     margin-top: 1rem;
 }
-.custom-label{
-    color: #d8d8d8;
-}
-.description{
-    color: #d8d8d8;
-}
+
 .textarea{
     border: none;
     width: 100%;
     height: 7rem;
     padding: 18px 0 18px 20px;
     border-radius: 4px;
-    background: #32323c;
-    color: #a0a0a0;
+    border: 1px solid grey;
     font-family: Outfit;
     font-size: 18px;
     margin-top: 1rem;
@@ -86,10 +85,40 @@
 }
 .submit-btn{
     border: none;
-    background-color: white;
+    background-color: hsl(0, 0%,20%);
+    color: #fff;
     padding: 1rem;
-    border: 1px solid white;
+    margin: 1rem;
     border-radius: 5px;
-    margin-top: 1.2rem;
-    font-size: 1rem;
+    margin-top: 2rem;
 }
+.submit-btn:hover {
+    background-color:hsl(0, 3%, 8%);
+}
+.email{
+    display: flex;
+}
+.icon-link{
+    text-decoration: none; 
+    color: inherit; 
+}
+.icon-link {
+    text-decoration: none; /* Remove underline from links */
+}
+
+.icon-div-e, .icon-div-p, .icon-div-m {
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.icon-div-e:hover {
+    color: red; /* Red color on hover for Email icon */
+}
+
+.icon-div-p:hover {
+    color: blue; /* Blue color on hover for Phone icon */
+}
+
+.icon-div-m:hover {
+    color: orange; /* Orange color on hover for Location icon */
+}
+

@@ -1,7 +1,7 @@
 /* Base styles (unchanged) */
 
 .intro {
-    margin-top: 2rem;
+    margin-top: 1rem;
     height: calc(100vh - 5rem);
     width: 100vw;
     display: flex;
@@ -52,9 +52,10 @@ p {
     margin-top: 0.9rem;
 }
 
-.contact-btn, .resume-btn {
+.contact-btn {
     border: none;
-    background-color: white;
+    background-color: hsl(0, 0%,20%);
+    color: #fff;
     padding: 1rem;
     margin: 1rem;
     border-radius: 5px;
@@ -62,14 +63,10 @@ p {
 }
 
 .contact-btn:hover, .resume-btn:hover {
-    background-color: yellow;
-    font-weight: bold;
+    background-color:hsl(0, 3%, 8%);
 }
 
-.cv-link {
-    text-decoration: none;
-    color: black;
-}
+
 
 /* Responsive styles */
 
