@@ -1,74 +1,133 @@
-.intro{
+/* Base styles (unchanged) */
+
+.intro {
     margin-top: 2rem;
-    height: calc(100vh-5rem);
+    height: calc(100vh - 5rem);
     width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+    text-align: center; /* Center text for smaller screens */
 }
-.intro-img{
+
+.intro-img {
     object-fit: cover;
     object-position: left;
-    height:15rem;
+    height: 15rem;
     width: 15rem;
     border: 1px solid black;
     border-radius: 50%;
     transform: scale(0.9);
     transition: transform 0.3s ease;
 }
-.intro-img:hover{
+
+.intro-img:hover {
     transform: scale(1.0);
 }
 
-.riyaz{
+.riyaz {
     font-weight: bold;
-    font-size: xx-large;
     background: rgb(9,121,22);
     background: linear-gradient(90deg, rgba(9,121,22,1) 27%, rgba(21,223,204,0.9887604700083158) 55%);
     background-clip: text; 
     color: transparent;
-    font-size: 4rem; 
+    font-size: 4rem;
     font-weight: bold;
 }
 
- .front{
-    font-size: 4rem; 
+.front {
+    font-size: 4rem;
     font-weight: bold;
-
- }
-.last{
-   margin-left: 5rem ;
-   font-size: 4rem; 
-   font-weight: bold;
 }
-p{
-    font-size: 1.2rem; 
+
+.last {
+    margin-left: 5rem;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.2rem;
     margin-top: 0.9rem;
 }
-.contact-btn{
-    border: none;
-    background-color: white;
-    padding: 1rem;
-    margin: 1rem;
-    border-radius: 5px;
-    margin-top: 2rem;
-}
-.contact-btn:hover{
-    background-color: yellow;
-    font-weight: bold;
-}
-.resume-btn{
-    border: none;
-    background-color: white;
-    padding: 1rem;
-    margin: 1rem;
-    border-radius: 5px;
-    margin-top: 2rem;
 
+.contact-btn, .resume-btn {
+    border: none;
+    background-color: white;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 5px;
+    margin-top: 2rem;
 }
-.resume-btn:hover{
+
+.contact-btn:hover, .resume-btn:hover {
     background-color: yellow;
     font-weight: bold;
+}
+
+.cv-link {
+    text-decoration: none;
+    color: black;
+}
+
+/* Responsive styles */
+
+@media (max-width: 768px) {
+    .intro {
+        height: auto; /* Adjust height for smaller screens */
+        padding: 1rem; /* Add padding for better spacing */
+        margin-top: 1rem; /* Reduce margin-top */
+    }
+
+    .intro-img {
+        height: 10rem; /* Reduce image size */
+        width: 10rem;
+    }
+
+    .riyaz, .front, .last {
+        font-size: 2.5rem; /* Reduce font size */
+    }
+
+    .last {
+        margin-left: 0; /* Remove margin-left for smaller screens */
+    }
+
+    p {
+        font-size: 1rem; /* Adjust font size for paragraphs */
+        margin-top: 0.5rem; /* Adjust margin-top for paragraphs */
+    }
+
+    .contact-btn, .resume-btn {
+        padding: 0.8rem; /* Adjust button padding */
+        margin: 0.5rem; /* Reduce margin */
+        margin-top: 1rem; /* Reduce margin-top for buttons */
+    }
+}
+
+@media (max-width: 480px) {
+    .intro {
+        padding: 0.5rem; /* Further reduce padding */
+        margin-top: 0.5rem; /* Further reduce margin-top */
+    }
+
+    .intro-img {
+        height: 8rem; /* Further reduce image size */
+        width: 8rem;
+    }
+
+    .riyaz, .front, .last {
+        font-size: 2rem; /* Further reduce font size */
+    }
+
+    p {
+        font-size: 0.9rem; /* Further adjust font size */
+        margin-top: 0.3rem; /* Further reduce margin-top for paragraphs */
+    }
+
+    .contact-btn, .resume-btn {
+        padding: 0.6rem; /* Further reduce button padding */
+        margin: 0.3rem; /* Further reduce margin */
+        margin-top: 0.5rem; /* Further reduce margin-top for buttons */
+    }
 }
