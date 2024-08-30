@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background: transparent;
+
+}
+body{
+    background: hsl(0, 0%,98%);
+    color:hsl(0, 0%,46%);
+    overflow: hidden;
+    overflow-y: scroll;
+    
+    
+}
