@@ -1,72 +1,113 @@
-.skills-section{
+.skills-section {
     width: 80vw;
     margin-top: 1rem;
 }
-.skills-container{
+
+.skills-container {
     width: 80vw;
-    display:flex;
-    margin-left: 9rem;
+    display: flex;
+    justify-content: center; /* Center the containers horizontally */
+    flex-wrap: wrap; /* Allow wrapping of child elements */
     margin-top: 1rem;
     margin-bottom: 5rem;
 }
-.skill-heading{
-    color: hsl(0, 0%,20%);
-    margin-left: 15rem;
+
+.skill-heading {
+    color: hsl(0, 0%, 20%);
     text-align: center;
     font-size: 2.25rem;
     margin-top: 3rem;
     margin-bottom: 5rem;
 }
-.container-1{
-    box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
-    height: 23rem;
-    width: 20rem;
-    margin-left: 4rem;
-    background-color:  #fff;
-    color:rgb(90, 86, 86);
-    border-radius: 5px;
 
-}
-.container-2{
+.container-1, .container-2, .container-3 {
     box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
     height: 23rem;
     width: 20rem;
-    margin-left: 4rem;
+    margin: 1rem; /* Adjust margin to center and space out containers */
     background-color: #fff;
-    color:rgb(90, 86, 86);
+    color: rgb(90, 86, 86);
     border-radius: 5px;
-
-
 }
-.container-3{
-    box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
-    height: 23rem;
-    width: 20rem;
-    margin-left: 4rem;
-    background-color: #fff;
-    color:rgb(90, 86, 86);
-    border-radius: 5px;
 
-
-}
-.innermost{
+.innermost {
     padding: 2.5rem;
     display: flex;
+    flex-wrap: wrap; /* Allow wrapping of inner items */
 }
-.common-heading{
+
+.common-heading {
     text-align: center;
     padding-top: 1rem;
 }
-.right-inner{
+
+.right-inner {
     margin-left: 3rem;
 }
-.s-div{
+
+.s-div {
     display: flex;
     margin-top: 1rem;
 }
-.skdiv{
+
+.skdiv {
     margin-left: 0.3rem;
 }
-.skill-icon{
+
+.skill-icon {
     margin-top: 0.3rem;
+}
+
+/* Media Queries for responsiveness */
+
+/* Media Queries for responsiveness */
+
+/* Media Queries for responsiveness */
+
+@media (max-width: 1200px) {
+    .skills-container {
+        margin-left: 0; /* Center the container on medium screens */
+    }
+    .skill-heading {
+        margin-left: 0;
+    }
+
+    .container-1, .container-2, .container-3 {
+        margin-left: auto;
+        margin-right: auto; /* Center containers horizontally */
+    }
+}
+
+@media (max-width: 768px) {
+    .skills-container {
+        margin-left: 0;
+        flex-direction: column; /* Stack containers vertically */
+        align-items: center; /* Center containers horizontally */
+    }
+
+    .container-1, .container-2, .container-3 {
+        width: 90vw; /* Adjust width to fit small screens */
+        margin: 1rem 0; /* Center and space out containers vertically */
+    }
+}
+
+@media (max-width: 480px) {
+    .skill-heading {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+
+    .container-1, .container-2, .container-3 {
+        height: auto; /* Allow height to adjust based on content */
+        width: 90vw; /* Adjust width to fit very small screens */
+        margin: 1rem 1rem; /* Center and space out containers vertically */
+    }
+
+    .innermost {
+        padding: 1rem;
+        flex-direction: column; /* Stack inner items vertically */
+    }
+
+    .right-inner {
+        margin-left: 0;
+    }
 }

@@ -37,4 +37,83 @@
 .footer-icon-g:hover{
     color: rgb(61, 62, 62);
 }
-  
+.footer-link{
+    text-align: none;
+    color: inherit;
+}
+.footer {
+    width: 90vw;
+    height: auto; /* Allow height to adjust based on content */
+    margin-left: auto;
+    margin-right: auto; /* Center the footer */
+    padding: 1rem; /* Add padding for better spacing */
+}
+
+.footer-m {
+    display: flex;
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center; /* Center-align content */
+}
+
+.footer-l, .footer-r {
+    margin: 0.5rem 0; /* Adjust margin for smaller screens */
+}
+
+.footer-icon-l, .footer-icon-g, .footer-icon-i {
+    margin-right: 1rem; /* Adjust margin for smaller screens */
+}
+
+.footer-icon {
+    color: #000;
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.footer-icon-l:hover {
+    color: #0073b1; /* LinkedIn color on hover */
+    transform: scale(1.2); /* Scale up the icon on hover */
+}
+
+.footer-icon-i:hover {
+    color: rgb(220, 30, 39); /* Instagram color on hover */
+}
+
+.footer-icon-g:hover {
+    color: rgb(61, 62, 62); /* GitHub color on hover */
+}
+
+.footer-link {
+    text-decoration: none; /* Ensure no underline for links */
+    color: inherit;
+}
+
+.terms {
+    margin-right: 1rem; /* Adjust margin for smaller screens */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .footer-m {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        text-align: center;
+    }
+    
+    .footer-icon-l, .footer-icon-g, .footer-icon-i {
+        margin: 0.5rem; /* Adjust margin for smaller screens */
+    }
+
+    .footer-r {
+        margin-top: 1rem; /* Add space above on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        width: 100vw; /* Full width on very small screens */
+        padding: 0.5rem; /* Reduce padding for very small screens */
+    }
+
+    .footer-icon-l, .footer-icon-g, .footer-icon-i {
+        font-size: 1.5rem; /* Smaller icons for very small screens */
+    }
+}
+

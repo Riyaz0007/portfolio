@@ -1,96 +1,41 @@
-
-.seervices-m{
-    width: 80vw;
+/* General styling for responsiveness */
+.seervices-m {
+    width: 90vw;
     margin-top: 2rem;
     margin-bottom: 7rem;
-    margin-left: 10rem;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-
+    padding: 0 1rem;
 }
-.services-1{
-    height: 25rem;
-    width: 22rem;
+
+.services-1 {
+    height: auto;
+    width: 100%;
+    max-width: 22rem;
     background-color: white;
     padding: 1rem;
     margin: 1rem;
     box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
-
+    flex: 1 1 calc(50% - 2rem); /* Responsive sizing */
 }
-.services-2{
-    height: 25rem;
-    width: 22rem;
-    background-color: white;
-    padding: 1rem;
-    margin: 1rem;
-    box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
 
-
-}
-.services-h{
+.services-h {
     text-align: center;
-    margin-top: 2rem;
-    font-size: 2.25rem;
     margin-top: 3rem;
-    color: hsl(0, 0%,20%);
-
+    font-size: 2.25rem;
+    color: hsl(0, 0%, 20%);
+    padding: 0 1rem;
 }
-.services-inside-h{
+
+.services-inside-h {
     text-align: left;
-    font-size: 1.25rrem;
+    font-size: 1.25rem;
     font-weight: 500;
-    color:hsl(0, 0%,20%);
+    color: hsl(0, 0%, 20%);
     margin-top: 1rem;
-
-}
-.view{
-    margin-bottom: 2rem;
-}
-.view-div:hover{
-    transform: translateX(10px);
-    transition: transform 0.3s ease;
-
-}
-.view-div{
-    display: flex;
-    margin-top: 2rem;
-    justify-content: flex-end;
-
-}
-.service-desc{
-    margin-top: 2rem;
-}
-.arrow{
-    margin-left: 0.25rem;
-    margin-top: 1.3rem;
-}
-.modal-content{
-    height: 37rem;
-    width: 32rem;
-    border-radius: 10px;
-}
-.modal-contemt-desc{
-    margin-left: 1rem;
-}
-.modal-content {
-    height: auto; /* Adjusted to fit content */
-    width: 32rem;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.modal-point {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1rem; /* Space between each point */
-}
-
-.modal-point p {
-    margin-left: 0.5rem; /* Space between icon and text */
-}
-
-.modal-content-desc {
-    margin: 0; /* Remove default paragraph margin */
 }
 
 .view-div {
@@ -105,22 +50,143 @@
     transition: transform 0.3s ease;
 }
 
+.service-desc {
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+
 .arrow {
     margin-left: 0.25rem;
     margin-top: 1.3rem;
 }
-.modal-btn{
+
+.modal-content {
+    height: auto;
+    width: 90%;
+    max-width: 32rem;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.modal-point {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.modal-point p {
+    margin-left: 0.5rem;
+}
+
+.modal-content-desc {
+    margin: 0;
+}
+
+.modal-btn {
     border: none;
-    background-color: hsl(0, 0%,20%);
+    background-color: hsl(0, 0%, 20%);
     color: #fff;
     padding: 1rem;
-    margin: 1rem;
     border-radius: 5px;
     margin-top: 2rem;
-}
-.modal-btn:hover{
-    background-color:hsl(0, 3%, 8%);
-
+    width: 100%;
+    cursor: pointer;
 }
 
+.modal-btn:hover {
+    background-color: hsl(0, 3%, 8%);
+}
+/* Add this to your services.css */
 
+.expanded {
+    max-width: 100%; /* Expand width when clicked */
+    height: auto; /* Expand height when clicked */
+}
+
+.expanded-content {
+    margin-top: 1rem;
+}
+
+.expanded .view-div {
+    display: none; /* Hide the 'View more' link when expanded */
+}
+/* Add this to your services.css */
+
+/* Expand styles */
+.expanded {
+    max-width: 100%; /* Expand width when clicked */
+    height: auto; /* Expand height when clicked */
+}
+
+.expanded-content {
+    margin-top: 1rem;
+}
+
+/* Hide 'View more' link when expanded */
+.expanded .view-div {
+    display: none;
+}
+
+/* Collapse button styles */
+.collapse-btn {
+    border: none;
+    background-color: hsl(0, 0%, 20%);
+    color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 2rem;
+    /* width: 100%; */
+    cursor: pointer;
+}
+
+.collapse-btn:hover {
+    background-color: hsl(0, 3%, 8%);
+}
+
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .services-1 {
+        flex: 1 1 100%; /* Full width on smaller screens */
+    }
+    
+    .services-h {
+        font-size: 2rem;
+    }
+
+    .modal-content {
+        width: 100%;
+        max-width: 90vw;
+        padding: 15px;
+    }
+
+    .modal-btn, .collapse-btn {
+        width: auto;
+        padding: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .services-h {
+        font-size: 1.75rem;
+    }
+
+    .services-inside-h {
+        font-size: 1.1rem;
+    }
+
+    .service-desc {
+        font-size: 0.9rem;
+    }
+
+    .modal-content {
+        width: 95vw;
+        padding: 10px;
+    }
+
+    .modal-btn, .collapse-btn {
+        padding: 0.7rem;
+    }
+}
