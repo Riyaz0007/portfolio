@@ -133,29 +133,56 @@
     margin-top: 2;
 }
 
-
-/* Media queries for responsiveness */
-/* Media queries for responsiveness */
-@media (max-width: 1200px) {
-    .left-section {
-        max-width: 100%;
+/* Media query for screen sizes between 768px and 1200px */
+@media (min-width: 768px) and (max-width: 1200px) {
+    .main {
+        flex-direction: column;
+        align-items: center;
     }
-    
+
+    .left-section,
     .right-section {
-        padding-left: 0;
-        text-align: center;
-    }
-    
-    .about-section {
-        justify-content: center;
+        width: 90%; /* Adjust width to take up more space */
+        padding: 0;
     }
 
-    /* Adjusting modal width and padding for medium-sized devices */
+    .desc {
+        font-size: 1.1rem; /* Slightly smaller font size for readability */
+        margin: 1rem;
+    }
+
+    .about-internal {
+        width: 100%; /* Adjust width to be full */
+        max-width: 10rem; /* Increase the max-width for a better layout */
+    }
+
+    .view-projects {
+        bottom: 1rem; /* Adjust positioning */
+        right: 1rem;
+    }
+
+    /* Adjust modal styling for this screen size */
     .MuiBox-root {
-        width: 80vw !important;  /* Adjust modal width for larger devices */
+        width: 80vw !important;  /* Adjust modal width */
         padding: 2rem !important;  /* Adjust padding */
     }
+
+    /* Adjust typography for medium screens */
+    #modal-modal-title, 
+    #modal-modal-description,
+    .project-heading {
+        font-size: 1.1rem !important;  /* Adjust font size */
+    }
+
+    /* Adjust icon button size */
+    .MuiIconButton-root {
+        top: 6px !important;  /* Adjust close button positioning */
+        right: 6px !important;
+    }
 }
+
+/* Media queries for responsiveness */
+/* Media queries for responsiveness */
 
 @media (max-width: 768px) {
     .main {

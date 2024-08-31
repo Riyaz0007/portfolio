@@ -93,3 +93,27 @@
     
     
 }
+/* Media Queries for Large Screens */
+@media (min-width: 1200px) {
+    .navbar {
+        padding: 1rem 3rem; /* Adjust padding for extra space on larger screens */
+    }
+
+    .navitems {
+        /* Ensure nav items are well spaced out on larger screens */
+        margin: 0;
+    }
+
+    .navitems > li {
+        margin: 0 2rem; /* Increase margin between items */
+    }
+
+    .navitems > li a {
+        font-size: 1rem; /* Increase font size slightly for better visibility */
+    }
+
+    .navbtn {
+        /* Hide the nav button on larger screens */
+        display: none;
+    }
+}

@@ -5,9 +5,6 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import PhoneIcon from '@mui/icons-material/Phone';
 import emailjs from 'emailjs-com';
 
-
-
-
 const Contact = () => {
     const [formData, setFormData] = useState({
         name: '',

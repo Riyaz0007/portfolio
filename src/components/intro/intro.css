@@ -73,7 +73,7 @@ p {
     .intro {
         height: auto; /* Adjust height for smaller screens */
         padding: 1rem; /* Add padding for better spacing */
-        margin-top: 1rem; /* Reduce margin-top */
+        margin-top:0; /* Reduce margin-top */
     }
 
     .intro-img {
@@ -118,12 +118,44 @@ p {
 
     p {
         font-size: 0.9rem; /* Further adjust font size */
-        margin-top: 0.3rem; /* Further reduce margin-top for paragraphs */
+        margin-top: 0; /* Further reduce margin-top for paragraphs */
     }
 
     .contact-btn, .resume-btn {
         padding: 0.6rem; /* Further reduce button padding */
         margin: 0.3rem; /* Further reduce margin */
         margin-top: 0.5rem; /* Further reduce margin-top for buttons */
+    }
+}
+/* Responsive styles for 750px to 1200px */
+@media (min-width: 750px) and (max-width: 1200px) {
+    .intro {
+        height: auto; /* Adjust height to avoid extra space */
+        padding: 2rem; /* Adjust padding for better spacing */
+        margin-top: 0; /* Reduce margin-top */
+    }
+
+    .intro-img {
+        height: 12rem; /* Adjust image size */
+        width: 12rem;
+    }
+
+    .riyaz, .front, .last {
+        font-size: 3rem; /* Adjust font size */
+    }
+
+    .last {
+        margin-left: 1rem; /* Reduce margin-left */
+    }
+
+    p {
+        font-size: 1.1rem; /* Adjust font size for paragraphs */
+        margin-top: 0.7rem; /* Adjust margin-top for paragraphs */
+    }
+
+    .contact-btn, .resume-btn {
+        padding: 0.9rem; /* Adjust button padding */
+        margin: 0.7rem; /* Adjust margin */
+        margin-top: 1.5rem; /* Adjust margin-top for buttons */
     }
 }
