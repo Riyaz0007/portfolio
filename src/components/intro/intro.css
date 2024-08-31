@@ -1,7 +1,6 @@
 /* Base styles (unchanged) */
 
 .intro {
-    margin-top: 1rem;
     height: calc(100vh - 5rem);
     width: 100vw;
     display: flex;

@@ -108,8 +108,9 @@
 
 @media (max-width: 480px) {
     .footer {
-        width: 100vw; /* Full width on very small screens */
-        padding: 0.5rem; /* Reduce padding for very small screens */
+        width: 90vw;
+        height: 6rem;
+        padding: 0.5rem;
     }
 
     .footer-icon-l, .footer-icon-g, .footer-icon-i {

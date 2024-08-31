@@ -1,113 +1,152 @@
-.skills-section {
+.skills-section{
     width: 80vw;
     margin-top: 1rem;
 }
-
-.skills-container {
+.skills-container{
     width: 80vw;
-    display: flex;
-    justify-content: center; /* Center the containers horizontally */
-    flex-wrap: wrap; /* Allow wrapping of child elements */
+    display:flex;
+    margin-left: 9rem;
     margin-top: 1rem;
     margin-bottom: 5rem;
 }
-
-.skill-heading {
-    color: hsl(0, 0%, 20%);
+.skill-heading{
+    color: hsl(0, 0%,20%);
+    margin-left: 15rem;
     text-align: center;
     font-size: 2.25rem;
     margin-top: 3rem;
     margin-bottom: 5rem;
 }
-
-.container-1, .container-2, .container-3 {
+.container-1{
     box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
     height: 23rem;
     width: 20rem;
-    margin: 1rem; /* Adjust margin to center and space out containers */
-    background-color: #fff;
-    color: rgb(90, 86, 86);
+    margin-left: 4rem;
+    background-color:  #fff;
+    color:rgb(90, 86, 86);
     border-radius: 5px;
-}
 
-.innermost {
+}
+.container-2{
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
+    height: 23rem;
+    width: 20rem;
+    margin-left: 4rem;
+    background-color: #fff;
+    color:rgb(90, 86, 86);
+    border-radius: 5px;
+
+
+}
+.container-3{
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
+    height: 23rem;
+    width: 20rem;
+    margin-left: 4rem;
+    background-color: #fff;
+    color:rgb(90, 86, 86);
+    border-radius: 5px;
+
+
+}
+.innermost{
     padding: 2.5rem;
     display: flex;
-    flex-wrap: wrap; /* Allow wrapping of inner items */
 }
-
-.common-heading {
+.common-heading{
     text-align: center;
     padding-top: 1rem;
 }
-
-.right-inner {
+.right-inner{
     margin-left: 3rem;
 }
-
-.s-div {
+.s-div{
     display: flex;
     margin-top: 1rem;
 }
-
-.skdiv {
+.skdiv{
     margin-left: 0.3rem;
 }
-
-.skill-icon {
+.skill-icon{
     margin-top: 0.3rem;
 }
-
-/* Media Queries for responsiveness */
-
-/* Media Queries for responsiveness */
-
-/* Media Queries for responsiveness */
-
 @media (max-width: 1200px) {
     .skills-container {
-        margin-left: 0; /* Center the container on medium screens */
+        margin-left: 5rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-1, .container-2, .container-3 {
+        margin-left: 0;
+        margin-bottom: 2rem;
+        width: 70%;
+        height: auto;
     }
     .skill-heading {
         margin-left: 0;
-    }
-
-    .container-1, .container-2, .container-3 {
-        margin-left: auto;
-        margin-right: auto; /* Center containers horizontally */
+        text-align: center;
+        font-size: 2rem;
     }
 }
 
 @media (max-width: 768px) {
-    .skills-container {
-        margin-left: 0;
-        flex-direction: column; /* Stack containers vertically */
-        align-items: center; /* Center containers horizontally */
+    .skills-section {
+        width: 90vw;
     }
-
+    .skills-container {
+        margin-left: 2rem;
+        flex-direction: column;
+        align-items: center;
+    }
     .container-1, .container-2, .container-3 {
-        width: 90vw; /* Adjust width to fit small screens */
-        margin: 1rem 0; /* Center and space out containers vertically */
+        width: 90%;
+        margin-left: 0;
+        height: auto;
+        margin-bottom: 2rem;
+    }
+    .skill-heading {
+        font-size: 1.8rem;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
     }
 }
 
 @media (max-width: 480px) {
-    .skill-heading {
-        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    .skills-section {
+        width: 95vw;
+        margin-top: 0.5rem;
     }
-
+    .skills-container {
+        margin-left: 2rem;
+        flex-direction: column;
+        align-items: center;
+    }
     .container-1, .container-2, .container-3 {
-        height: auto; /* Allow height to adjust based on content */
-        width: 90vw; /* Adjust width to fit very small screens */
-        margin: 1rem 1rem; /* Center and space out containers vertically */
+        width: 100%;
+        margin-left: 0;
+        height: auto;
+        margin-bottom: 1.5rem;
     }
-
+    .skill-heading {
+        font-size: 1.5rem;
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+    }
     .innermost {
-        padding: 1rem;
-        flex-direction: column; /* Stack inner items vertically */
+        padding: 1.5rem;
+        flex-direction: column;
     }
-
     .right-inner {
         margin-left: 0;
+        margin-top: 1rem;
+    }
+    .common-heading {
+        font-size: 1.2rem;
+    }
+    .s-div {
+        margin-top: 0.8rem;
+    }
+    .skill-icon {
+        margin-top: 0.2rem;
     }
 }

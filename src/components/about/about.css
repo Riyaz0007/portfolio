@@ -50,7 +50,7 @@
     box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
     height: 11rem;
     width: 8rem;
-    margin: 1rem;
+    margin: 1xrem;
     border-radius: 0.5rem;
 }
 
@@ -92,7 +92,49 @@
     text-decoration: none;
     color: #fff;
 }
+.about-internal {
+    background-color: #fff;
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
+    height: 11rem;
+    width: 8rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    position: relative; /* Positioning to allow absolute placement */
+}
 
+.view-projects {
+    display: flex;
+    align-items: center;
+    position: absolute; /* Absolute positioning to place it at the bottom right */
+    bottom: 0.5rem;
+    right: 0.5rem;
+    cursor: pointer;
+}
+
+.view-text {
+    font-size: 0.9rem;
+    color: hsl(0, 0%, 20%);
+    margin-right: 0.2rem; /* Spacing between text and icon */
+}
+
+.forward-arrow {
+    color: hsl(0, 0%, 20%);
+    font-size: 0.8rem;
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.view-projects:hover .forward-arrow {
+    transform: translateX(3px); /* Slight move to right on hover */
+}
+.project-heading{
+    font-weight: 500;
+    color: hsl(0, 0%, 20%);
+    font-size: 0.9rem;
+    margin-top: 2;
+}
+
+
+/* Media queries for responsiveness */
 /* Media queries for responsiveness */
 @media (max-width: 1200px) {
     .left-section {
@@ -106,6 +148,12 @@
     
     .about-section {
         justify-content: center;
+    }
+
+    /* Adjusting modal width and padding for medium-sized devices */
+    .MuiBox-root {
+        width: 80vw !important;  /* Adjust modal width for larger devices */
+        padding: 2rem !important;  /* Adjust padding */
     }
 }
 
@@ -125,6 +173,12 @@
         font-size: 1rem;
         margin: 1rem;
     }
+
+    /* Adjusting modal for tablet devices */
+    .MuiBox-root {
+        width: 90vw !important;  /* Adjust modal width for tablet devices */
+        padding: 1.5rem !important;  /* Reduce padding */
+    }
 }
 
 @media (max-width: 480px) {
@@ -141,5 +195,24 @@
     .about-internal {
         width: 100%;
         max-width: 8rem;
+    }
+
+    /* Adjusting modal for mobile devices */
+    .MuiBox-root {
+        width: 95vw !important;  /* Almost full width for small screens */
+        padding: 1rem !important;  /* Less padding for small screens */
+    }
+
+    /* Adjust typography for smaller screens */
+    #modal-modal-title, 
+    #modal-modal-description,
+    .project-heading {
+        font-size: 1rem !important;  /* Adjust font size */
+    }
+
+    /* Reduce icon button size on smaller screens */
+    .MuiIconButton-root {
+        top: 4px !important;  /* Adjust close button positioning */
+        right: 4px !important;
     }
 }
