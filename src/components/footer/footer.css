@@ -97,10 +97,14 @@
 @media screen and (max-width:649px) {
     .footer{
         margin-top:20rem;
-
-
     }
 }
+@media screen and (max-width:785px) {
+    .footer{
+        margin-top:20rem;
+    }
+}
+
 @media screen and (max-width:263px) {
     .footer{
         margin-top:25rem;
